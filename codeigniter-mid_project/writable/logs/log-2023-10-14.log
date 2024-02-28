@@ -1,0 +1,528 @@
+INFO - 2023-10-14 03:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-14 03:11:48 --> mysqli_sql_exception: Column 'email' cannot be null in E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\UserCrud.php(28): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+#9 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#10 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 03:11:48 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`name`, `email`, `phone`, `age`, `address`) VALUES (:name:, :email:, :phone:, :age:, :address:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserCrud.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+ERROR - 2023-10-14 03:23:36 --> mysqli_sql_exception: Column 'email' cannot be null in E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\UserCrud.php(28): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+#9 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#10 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 03:23:36 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`name`, `email`, `phone`, `age`, `address`) VALUES (:name:, :email:, :phone:, :age:, :address:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserCrud.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+ERROR - 2023-10-14 03:23:52 --> mysqli_sql_exception: Column 'email' cannot be null in E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\UserCrud.php(28): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+#9 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#10 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 03:23:52 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`name`, `email`, `phone`, `age`, `address`) VALUES (:name:, :email:, :phone:, :age:, :address:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserCrud.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+ERROR - 2023-10-14 03:23:57 --> mysqli_sql_exception: Column 'email' cannot be null in E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\UserCrud.php(28): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+#9 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#10 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 03:23:57 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`name`, `email`, `phone`, `age`, `address`) VALUES (:name:, :email:, :phone:, :age:, :address:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserCrud.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+INFO - 2023-10-14 03:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:27:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-14 03:32:03 --> mysqli_sql_exception: Column 'email' cannot be null in E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\UserCrud.php(28): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+#9 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#10 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 03:32:03 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`name`, `email`, `phone`, `age`, `address`) VALUES (:name:, :email:, :phone:, :age:, :address:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserCrud.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+INFO - 2023-10-14 03:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 03:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-14 04:35:30 --> mysqli_sql_exception: Column 'email' cannot be null in E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\UserCrud.php(28): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+#9 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#10 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 04:35:30 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`name`, `email`, `phone`, `age`, `address`) VALUES (:name:, :email:, :phone:, :age:, :address:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserCrud.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+ERROR - 2023-10-14 04:37:58 --> mysqli_sql_exception: Column 'email' cannot be null in E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\UserCrud.php(28): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+#9 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#10 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 04:37:58 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`name`, `email`, `phone`, `age`, `address`) VALUES (:name:, :email:, :phone:, :age:, :address:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserCrud.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+ERROR - 2023-10-14 04:38:51 --> mysqli_sql_exception: Column 'email' cannot be null in E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\UserCrud.php(28): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+#9 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#10 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 04:38:51 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`name`, `email`, `phone`, `age`, `address`) VALUES (:name:, :email:, :phone:, :age:, :address:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserCrud.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+ERROR - 2023-10-14 04:39:48 --> mysqli_sql_exception: Column 'email' cannot be null in E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `cu...', 0)
+#1 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\UserCrud.php(28): CodeIgniter\Model->insert(Array)
+#8 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+#9 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#10 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 04:39:48 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `customers` (`name`, `email`, `phone`, `age`, `address`) VALUES (:name:, :email:, :phone:, :age:, :address:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UserCrud.php(28): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserCrud->store()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+CRITICAL - 2023-10-14 04:39:55 --> Class "App\Controllers\ProductsModel" not found
+in APPPATH\Controllers\ProductCrud.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductCrud->store()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductCrud))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+CRITICAL - 2023-10-14 04:41:19 --> Undefined array key "picture"
+in APPPATH\Views\product_view.php on line 64.
+ 1 APPPATH\Views\product_view.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "picture"', 'E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Views\\product_view.php', 64)
+ 2 SYSTEMPATH\View\View.php(226): include('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\ProductCrud.php(11): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductCrud->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+CRITICAL - 2023-10-14 04:43:00 --> Undefined array key "picture"
+in APPPATH\Views\product-edit.php on line 55.
+ 1 APPPATH\Views\product-edit.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "picture"', 'E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Views\\product-edit.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Views\\product-edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('product-edit', [], true)
+ 5 APPPATH\Controllers\ProductCrud.php(35): view('product-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductCrud->singleUser('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+INFO - 2023-10-14 04:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 06:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 07:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 07:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 07:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 07:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 07:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-14 16:07:09 --> Undefined variable $croductsModel
+in APPPATH\Controllers\CategoryCrud.php on line 10.
+ 1 APPPATH\Controllers\CategoryCrud.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $croductsModel', 'D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Controllers\\CategoryCrud.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\CategoryCrud->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryCrud))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+CRITICAL - 2023-10-14 16:12:21 --> Undefined variable $croductsModel
+in APPPATH\Controllers\CategoryCrud.php on line 10.
+ 1 APPPATH\Controllers\CategoryCrud.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $croductsModel', 'D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Controllers\\CategoryCrud.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\CategoryCrud->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryCrud))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+CRITICAL - 2023-10-14 16:12:23 --> Undefined variable $croductsModel
+in APPPATH\Controllers\CategoryCrud.php on line 10.
+ 1 APPPATH\Controllers\CategoryCrud.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $croductsModel', 'D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Controllers\\CategoryCrud.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\CategoryCrud->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryCrud))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+CRITICAL - 2023-10-14 16:20:42 --> Undefined array key "category"
+in APPPATH\Views\category-edit.php on line 47.
+ 1 APPPATH\Views\category-edit.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Views\\category-edit.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Views\\category-edit.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('category-edit', [], true)
+ 5 APPPATH\Controllers\CategoryCrud.php(32): view('category-edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\CategoryCrud->singleUser('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryCrud))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+CRITICAL - 2023-10-14 16:24:01 --> Undefined variable $productsModel
+in APPPATH\Controllers\CategoryCrud.php on line 42.
+ 1 APPPATH\Controllers\CategoryCrud.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $productsModel', 'D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\app\\Controllers\\CategoryCrud.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\CategoryCrud->update()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryCrud))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+INFO - 2023-10-14 17:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-14 17:38:24 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cism', 3306, '', 0)
+#1 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('khaleda9513@gma...', 'email', Array, NULL, 'email')
+#6 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'khaleda9513@gma...', Array, Array)
+#7 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\Register.php(35): CodeIgniter\Controller->validate(Array)
+#9 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\Register->store()
+#10 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('khaleda9513@gma...', 'email', Array, NULL, 'email')
+#5 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'khaleda9513@gma...', Array, Array)
+#6 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#7 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\Register.php(35): CodeIgniter\Controller->validate(Array)
+#8 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\Register->store()
+#9 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 17:38:24 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('khaleda9513@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'khaleda9513@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Register.php(35): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Register->store()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+ERROR - 2023-10-14 17:38:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cism', 3306, '', 0)
+#1 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('khaleda9513@gma...', 'email', Array, NULL, 'email')
+#6 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'khaleda9513@gma...', Array, Array)
+#7 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\Register.php(35): CodeIgniter\Controller->validate(Array)
+#9 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\Register->store()
+#10 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('khaleda9513@gma...', 'email', Array, NULL, 'email')
+#5 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'khaleda9513@gma...', Array, Array)
+#6 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#7 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\Register.php(35): CodeIgniter\Controller->validate(Array)
+#8 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\Register->store()
+#9 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 17:38:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('khaleda9513@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'khaleda9513@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Register.php(35): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Register->store()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+INFO - 2023-10-14 17:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-14 17:43:22 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cism', 3306, '', 0)
+#1 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('khaleda9513@gma...', 'email', Array, NULL, 'email')
+#6 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'khaleda9513@gma...', Array, Array)
+#7 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\Register.php(35): CodeIgniter\Controller->validate(Array)
+#9 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\Register->store()
+#10 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('khaleda9513@gma...', 'email', Array, NULL, 'email')
+#5 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'khaleda9513@gma...', Array, Array)
+#6 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Controller.php(150): CodeIgniter\Validation\Validation->run()
+#7 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\app\Controllers\Register.php(35): CodeIgniter\Controller->validate(Array)
+#8 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(919): App\Controllers\Register->store()
+#9 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\codeignetor\codeigniter-mid_project\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-10-14 17:43:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(309): CodeIgniter\Validation\StrictRules\Rules->is_unique('khaleda9513@gmail.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('email', 'email', 'khaleda9513@gmail.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(150): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Register.php(35): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Register->store()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\codeignetor\\codeigniter-mid_project\\public\\index.php')
+INFO - 2023-10-14 17:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 17:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 17:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
